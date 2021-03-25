@@ -5,7 +5,15 @@ public class SnakeLadder
 	public static void main(String grgs[])
 	{
 		int startpoint = 0;
+
+		int playerposition =0;
+
 		System.out.println("Welcome to the Snake Ladder Simulator Problem  " + " PlayerStartPoint:" +startpoint);
+
+
+		while(playerposition <= 100){
+
+
 		Random random = new Random();
 		int Dieroll = (random.nextInt(6))+1;
 		{
@@ -14,8 +22,6 @@ public class SnakeLadder
 
 		Random rand = new Random();
                 int Check= rand.nextInt(3);
-
-		int playerposition =0;
 
                 switch (Check)
                         {
@@ -35,8 +41,10 @@ public class SnakeLadder
                 break;
 
                 default:
-                 System.out.println("Invalid option");
-			}
+                System.out.println("Invalid option");
+									}
+					}
+					 System.out.println("Player Win");
 
-	}
+		}
 }
