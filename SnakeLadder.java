@@ -8,9 +8,8 @@ public class SnakeLadder
 
 		int playerposition =0;
 		int playerpreviousposition = 0;
-
+		int count = 0;
 		System.out.println("Welcome to the Snake Ladder Simulator Problem  " + " PlayerStartPoint:" +startpoint);
-
 
 		while(playerposition <= 100){
 
@@ -20,9 +19,12 @@ public class SnakeLadder
 
 		//System.out.println("Die number: " +Dieroll);
 
+		count++;
+
 
 		Random rand = new Random();
                 int Check= rand.nextInt(3);
+
 		playerpreviousposition = playerposition;
 
                 switch (Check)
@@ -58,6 +60,7 @@ public class SnakeLadder
 					}
 				System.out.println("Player final Position: "  +playerposition);
 				System.out.println("Player Win");
+				System.out.println("Number of time Die Roll: " +count);
 
 		}
 }
